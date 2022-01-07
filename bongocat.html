@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="es">
+<head style="background-color: white;">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--aqui va el favicon-->
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/site.webmanifest">
+
+
+    <title>Bongo Cat</title>
+    <link rel="stylesheet" href="/bongostyle.css">
+</head>
+
+<body style="background-color: white;">
+    <!--esto es para el icono del github a la derecha-->
+    <a style="padding-left: 1710px;" href="https://github.com/Externalizable/bongo.cat" target="_blank" id="github"
+        aria-label="View source on GitHub"><svg id="github" width="80" height="80" viewBox="0 0 250 250" aria-hidden="true">
+            <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
+            <path
+                d="M128.3,109.0 C113.8,99.7 119.0,89.6 119.0,89.6 C122.0,82.7 120.5,78.6 120.5,78.6 C119.2,72.0 123.4,76.3 123.4,76.3 C127.3,80.9 125.5,87.3 125.5,87.3 C122.9,97.6 130.6,101.9 134.4,103.2"
+                fill="currentColor" class="octo-arm"></path>
+            <path
+                d="M115.0,115.0 C114.9,115.1 118.7,116.5 119.8,115.4 L133.7,101.6 C136.9,99.2 139.9,98.4 142.2,98.6 C133.8,88.0 127.5,74.4 143.8,58.0 C148.5,53.4 154.0,51.2 159.7,51.0 C160.3,49.4 163.2,43.6 171.4,40.1 C171.4,40.1 176.1,42.5 178.8,56.2 C183.1,58.6 187.2,61.8 190.9,65.4 C194.5,69.0 197.7,73.2 200.1,77.6 C213.8,80.2 216.3,84.9 216.3,84.9 C212.7,93.1 206.9,96.0 205.4,96.6 C205.1,102.4 203.0,107.8 198.3,112.5 C181.9,128.9 168.3,122.5 157.7,114.1 C157.9,116.9 156.7,120.9 152.7,124.9 L141.0,136.5 C139.8,137.7 141.6,141.9 141.8,141.8 Z"
+                fill="currentColor" class="octo-body"></path> <!--path info https://developer.mozilla.org/en-US/docs/Web/SVG/Attribute/d-->
+        </svg></a>
+
+    <!--Para los rectángulos de las teclas-->
+    <!--<button type="button"
+onclick="document.getElementById('demo').innerHTML = Date()">
+A</button> lo saqué de: https://www.w3schools.com/html/html_scripts.asp 
+
+CHECK THIS https://www.w3schools.com/js/js_htmldom_animate.asp
+<p id="demo"></p>-->
+
+<!--para poner sonido es : 
+                <script>
+                    function play() {
+var audio = document.getElementById("audio");
+audio.play();
+                    }
+</script>
+<input type="button" value="PLAY" onclick="play()">
+<audio id="audio" src="/assets/sounds_bongo0.mp3"></audio> -->
+
+<!--<script> MI MILESIMO INTENTO CON EL SONIDO PERO CON EXITO :D
+    function play() {
+        var audio = document.getElementById("audio")
+        audio.play();
+    }
+</script>
+<div id="keys">
+    <span class="Key" input type="button" value="A" onclick="play()">A</span>
+    <audio id="audio" src="assets/sounds_bongo0.mp3"></audio>
+</div>-->
+
+    <header> 
+        <center>
+        <div id="keys">
+            <div>
+                <script>
+                    function play() {
+                        var audio = document.getElementById("audio")
+                        audio.play();
+                    }
+                    </script>
+                <span i18n="Bongos">Bongos</span>
+                <span class="key" input type="button" value="play" onclick="play()">A</span>
+                <audio id="audio" src="assets/sounds_bongo0.mp3"></audio> 
+                <span class="key" input type="button" value="play" onclick="play()">D</span>
+                <audio id="audio" src="assets/sounds_bongo0.mp3"></audio> 
+            </div>
+            <div>
+                <script> 
+                    function play() {
+                        var cymbal = document.getElementById("cymbal")
+                        cymbal.play();
+                    } 
+                </script>
+                <span i18n="Cymbal" >Cymbal</span>
+                <span class="key" input type="button" value="play" onclick="play()">C</span>
+                <audio id="cymbal" src="/assets/sounds_cymbal.mp3"></audio>
+            </div>
+
+            <div>
+                <span i18n="Cowbell">Cowbell</span>
+                
+<!--cowbell-->
+<script>
+    function play() {
+    var cowbell = document.getElementById("cowbell")
+    cowbell.play();
+    }
+</script>
+                <span class="key" input type="button" value="play" onclick="play()">F</span>
+                <audio id="cowbell" src="/assets/sounds_cowbell.mp3"></audio>
+            </div>
+
+
+            <div>
+                <span i18n="Tambourine">Tambourine</span>
+<!--tambourine-->
+<script>
+    function play() {
+    var tambourine = document.getElementById("tambourine")
+    tambourine.play();
+    }
+</script>
+                <span class="key" input type="button" value="play" onclick="play()">B</span>
+                <audio id="tambourine" src="/assets/sounds_tambourine.mp3"></audio>
+            </div>
+            <div>
+                <span i18n="Meow">Meow</span>
+                
+<!--meow-->
+<script>
+    function play() {
+    var meow = document.getElementById("meow")
+    meow.play();
+    }
+</script>
+                <span i18n="SPACE" class="key key-wide" input type="button" value="play" onclick="play()">SPACE</span>
+                <audio id="meow" src="/assets/sounds_meow.mp3"></audio>
+            </div>
+            <div>
+                <span i18n="Piano">Piano</span>
+                <!--piano-->
+<script>
+    function play() {
+    var piano = document.getElementById("piano")
+    piano.play();
+    }
+</script>
+                <span class="key" input type="button" value="play" onclick="play()">1</span> ...
+                <audio id="piano" src="/assets/sounds_keyboard0.mp3"></audio>
+                <span class="key" input type="button" value="play" onclick="play()">9</span>
+                <audio id="piano" src="/assets/sounds_keyboard0.mp3"></audio>
+                <span class="key" input type="button" value="play" onclick="play()">0</span>
+                <audio id="piano" src="/assets/sounds_keyboard0.mp3"></audio>
+            </div>
+            <div> <!--marimba-->
+                <script>
+                    function play() {
+                    var marimba = document.getElementById("marimba")
+                    marimba.play();
+                    }
+                </script>
+                <span i18n="Marimba">Marimba</span>
+                <span class="key" input type="button" value="play" onclick="play()">Q</span>
+                <audio id="marimba" src="/assets/sounds_marimba0.mp3"></audio>
+                <span class="key" input type="button" value="play" onclick="play()">W</span> ...
+                <audio id="marimba" src="/assets/sounds_marimba0.mp3"></audio>
+                <span class="key" input type="button" value="play" onclick="play()">P</span>
+                <audio id="marimba" src="/assets/sounds_marimba0.mp3"></audio>
+            </div>
+        </div>
+    </center>
+    </header>
+    
+    <!--<center><img src="/assets/bongocatplaying.png"></center>-->
+
+<!--bongo-->
+    <center>
+    <button onclick="document.getElementById('myImage').src='/assets/bongocatplaying.png'"><h2>Make bongocat play</h2></button>
+
+    <img id="myImage" src="/assets/bongopawsup.png" style="width:600px">
+    
+    <button onclick="document.getElementById('myImage').src='/assets/bongopawsup.png'"><h2>Stop him from playing</h2></button></center>
+    <!--cymball-->
+    <center><button onclick="document.getElementById('myImagee').src='/assets/cymballplaying.png'"><h2>Make cat play cymball</h2></button>
+
+        <img id="myImagee" src="/assets/cymballpawsup.png" style="width:600px">
+        
+        <button onclick="document.getElementById('myImagee').src='/assets/cymballpawsup.png'"><h2>Stop him from playing</h2></button></center>
+    <!--cambiar el id sigue cowbell-->
+    <center><button onclick="document.getElementById('myImage3').src='/assets/cowbellplaying.png'"><h2>Make cat play cowbell</h2></button>
+
+        <img id="myImage3" src="/assets/cowbellpawsup.png" style="width:600px">
+        
+        <button onclick="document.getElementById('myImage3').src='/assets/cowbellpawsup.png'"><h2>Stop him from playing</h2></button></center>
+    <!--sigue tambourine-->
+    <center><button onclick="document.getElementById('myImage4').src='/assets/tambourineplaying.png'"><h2>Make cat play tambourine</h2></button>
+
+        <img id="myImage4" src="/assets/tambourinepawsup.png" style="width:600px">
+        
+        <button onclick="document.getElementById('myImage4').src='/assets/tambourinepawsup.png'"><h2>Stop him from playing</h2></button></center>
+    <!--meow-->
+    <center><button onclick="document.getElementById('myImage5').src='/assets/meow.png'"><h2>Make cat meow</h2></button>
+
+        <img id="myImage5" src="/assets/bongopawsup.png" style="width:600px">
+        
+        <button onclick="document.getElementById('myImage5').src='/assets/bongopawsup.png'"><h2>Stop him from meowing</h2></button></center>
+    <!--piano y luego marimba-->
+    <center><button onclick="document.getElementById('myImage6').src='/assets/pianoplaying.png'"><h2>Make cat play piano</h2></button>
+
+        <img id="myImage6" src="/assets/pianopawsup.png" style="width:600px">
+        
+        <button onclick="document.getElementById('myImage6').src='/assets/pianopawsup.png'"><h2>Stop him from playing</h2></button></center>
+    <!--sigue marimba-->
+    <center><button onclick="document.getElementById('myImage7').src='/assets/marimbaplaying.png'"><h2>Make cat play marimba</h2></button>
+
+        <img id="myImage7" src="/assets/marimbapawsup.png" style="width:600px">
+        
+        <button onclick="document.getElementById('myImage7').src='/assets/marimbapawsup.png'"><h2>Stop him from playing</h2></button></center>
+
+<!--RESOURCES
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_intro_lightbulb
+https://www.w3schools.com/js/tryit.asp?filename=tryjs_lightbulb
+https://www.w3schools.com/html/html5_audio.asp
+-->
+
+<!--al pie va esto, créditos-->
+<br><br>
+    <center><footer>
+        <span i18n="other-lang"><a href="/?lang=ca">En català</a></span>
+        <span i18n="courtesy">Art courtesy of <a href="https://twitter.com/StrayRogue" target="_blank">@StrayRogue</a></span>
+        <span i18n="meme">Meme by <a href="https://twitter.com/DitzyFlama" target="_blank">@DitzyFlama</a></span>
+        <span i18n="website">Website by <a href="https://erics.site/?utm_source=bongo.cat" target="_blank">Eric Huber</a> (<a href="https://twitter.com/Externalizable" target="_blank">@Externalizable</a>)</span>
+    </footer></center>
+
+
+</body>
+
+</html>
